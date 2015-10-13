@@ -34,6 +34,15 @@ class PersonasController < ApplicationController
     end
   end
 
+  def show_by_rfc
+    @persona = Persona.find(:first, :conditions => ["per_rfc = ?", params[:rfc]])
+    respond_to do |format|
+      format.html { render :partial => "show"}# _show.html.erb
+      format.xml  { render :xml => @persona }
+      format.json  { render :json => @persona.to_json }
+    end
+  end
+
   # GET /personas/new
   # GET /personas/new.xml
   def new

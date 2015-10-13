@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :personas, :collection => {:show_by_curp => :get}
+  map.resources :personas, :collection => {:show_by_curp => :get, :show_by_rfc => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
