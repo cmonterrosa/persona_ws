@@ -1,0 +1,47 @@
+<h1>New persona</h1>
+
+<% form_for(@persona) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :per_paterno %><br />
+    <%= f.text_field :per_paterno %>
+  </p>
+  <p>
+    <%= f.label :per_materno %><br />
+    <%= f.text_field :per_materno %>
+  </p>
+  <p>
+    <%= f.label :per_nombre %><br />
+    <%= f.text_field :per_nombre %>
+  </p>
+  <p>
+    <%= f.label :per_curp %><br />
+    <%= f.text_field :per_curp %>
+  </p>
+  <p>
+    <%= f.label :per_rfc %><br />
+    <%= f.text_field :per_rfc %>
+  </p>
+  <p>
+    <%= f.label :per_tipo %><br />
+    <%= f.text_field :per_tipo %>
+  </p>
+  <p>
+    <%= f.label :per_elaboracion %><br />
+    <%= f.datetime_select :per_elaboracion %>
+  </p>
+  <p>
+    <%= f.label :per_modificacion %><br />
+    <%= f.datetime_select :per_modificacion %>
+  </p>
+  <p>
+    <%= f.label :per_activo_reg %><br />
+    <%= f.check_box :per_activo_reg %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', personas_path %>

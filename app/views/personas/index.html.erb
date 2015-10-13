@@ -1,0 +1,36 @@
+<h1>Personas</h1>
+
+<table>
+  <tr>
+    <th>Per paterno</th>
+    <th>Per materno</th>
+    <th>Per nombre</th>
+    <th>Per curp</th>
+    <th>Per rfc</th>
+    <th>Per tipo</th>
+    <th>Per elaboracion</th>
+    <th>Per modificacion</th>
+    <th>Per activo reg</th>
+  </tr>
+
+<% @personas.each do |persona| %>
+  <tr>
+    <td><%=h persona.per_paterno %></td>
+    <td><%=h persona.per_materno %></td>
+    <td><%=h persona.per_nombre %></td>
+    <td><%=h persona.per_curp %></td>
+    <td><%=h persona.per_rfc %></td>
+    <td><%=h persona.per_tipo %></td>
+    <td><%=h persona.per_elaboracion %></td>
+    <td><%=h persona.per_modificacion %></td>
+    <td><%=h persona.per_activo_reg %></td>
+    <td><%= link_to 'Show', persona %></td>
+    <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
+    <td><%= link_to 'Destroy', persona, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New persona', new_persona_path %>

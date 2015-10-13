@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  per_paterno: MyString
+  per_materno: MyString
+  per_nombre: MyString
+  per_curp: MyString
+  per_rfc: MyString
+  per_tipo: MyString
+  per_elaboracion: 2015-10-12 12:41:48
+  per_modificacion: 2015-10-12 12:41:48
+  per_activo_reg: false
+
+two:
+  per_paterno: MyString
+  per_materno: MyString
+  per_nombre: MyString
+  per_curp: MyString
+  per_rfc: MyString
+  per_tipo: MyString
+  per_elaboracion: 2015-10-12 12:41:48
+  per_modificacion: 2015-10-12 12:41:48
+  per_activo_reg: false
